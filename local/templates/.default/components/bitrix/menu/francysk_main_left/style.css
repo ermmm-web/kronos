@@ -1,0 +1,4 @@
+.nav ul li>a.nav-drop-expander{display:block; float:left;padding-left:25px; padding-right:0;}
+.nav ul li>a.nav-drop-text{display:block;padding-left:10px; margin-left:25px;}
+.nav .nav-drop-expander{}
+.nav ul li.nav-drop>a.nav-drop-text:before, .nav ul li.nav-drop>a.nav-drop-text:after{content: none;background: transparent;}

@@ -1,0 +1,23 @@
+.buy-with-presents-popup {
+    position: relative;
+    padding: 35px 35px 34px;
+    
+    margin: 0 auto
+}
+
+@media (max-width: 1259.98px) {
+    .buy-with-presents-popup {
+        width: 895px;
+        padding: 45px 43px 51px
+    }
+}
+
+@media (max-width: 959.98px) {
+    .buy-with-presents-popup {
+        padding: 42px 16px 30px;
+        width: auto
+    }
+}
+.popup__body {
+	width: 750px;
+}

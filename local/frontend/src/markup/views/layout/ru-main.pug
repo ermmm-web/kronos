@@ -1,0 +1,30 @@
+include ../mixin
+
+block vars
+  - var title = "Document"
+  - var keywords = "Keywords"
+  - var description = "Description"
+
+doctype
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
+    link(rel="stylesheet" href="css/index.css")
+    title= title
+  body
+    .page
+      include ../inc/ru-header
+
+      block body
+      
+      include ../inc/ru-footer
+        
+    script(src="js/libs/jquery-3.3.1.min.js")
+    script(src="js/libs/jquery.mousewheel.min.js")
+    script(src="js/libs/jquery.mCustomScrollbar.min.js")
+    script(src="js/libs/swiper.min.js")
+    script(src="js/main.js")

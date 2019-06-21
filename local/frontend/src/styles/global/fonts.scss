@@ -1,0 +1,181 @@
+$directory-lato: "../fonts/LatoOld/fontsquirrel/";
+
+$lato-hairline: ("Lato", "latohairline", "lato-hairline-webfont", 100, normal);
+$lato-hairline-italic: ("Lato", "latohairline_italic", "lato-hairlineitalic-webfont", 100, italic);
+$lato-thin: ("Lato", "latothin", "lato-thin-webfont", 200, normal);
+$lato-thin-italic: ("Lato", "latothin_italic", "lato-thinitalic-webfont", 200, italic);
+$lato-light: ("Lato", "latolight", "lato-light-webfont", 300, normal);
+$lato-light-italic: ("Lato", "latolight_italic", "lato-lightitalic-webfont", 300, italic);
+$lato-regular: ("Lato", "latoregular", "lato-regular-webfont", 400, normal);
+$lato-italic: ("Lato", "latoitalic", "lato-italic-webfont", 400, italic);
+$lato-medium: ("Lato", "latomedium", "lato-medium-webfont", 500, normal);
+$lato-medium-italic: ("Lato", "latomedium_italic", "lato-mediumitalic-webfont", 500, italic);
+$lato-semibold: ("Lato", "latosemibold", "lato-semibold-webfont", 600, normal);
+$lato-semibold-italic: ("Lato", "latosemibold_italic", "lato-semibolditalic-webfont", 600, italic);
+$lato-bold: ("Lato", "latobold", "lato-bold-webfont", 700, normal);
+$lato-bold-italic: ("Lato", "latobold_italic", "lato-bolditalic-webfont", 700, italic);
+$lato-heavy: ("Lato", "latoheavy", "lato-heavy-webfont", 800, normal);
+$lato-heavy-italic: ("Lato", "latoheavy_italic", "lato-heavyitalic-webfont", 800, italic);
+$lato-black: ("Lato", "latoblack", "lato-black-webfont", 900, normal);
+$lato-black-italic: ("Lato", "latoblack_italic", "lato-blackitalic-webfont", 900, italic);
+
+@mixin lato-font($font, $directory){
+  @font-face {
+    font-family: nth($font, 1);
+    src: url('#{$directory}#{nth($font, 3)}.eot');
+    src: url('#{$directory}#{nth($font, 3)}.eot?#iefix') format('embedded-opentype'),
+    url('#{$directory}#{nth($font, 3)}.woff2') format('woff2'),
+    url('#{$directory}#{nth($font, 3)}.woff') format('woff'),
+    url('#{$directory}#{nth($font, 3)}.ttf') format('truetype'),
+    url('#{$directory}#{nth($font, 3)}.svg##{nth($font, 2)}') format('svg');
+    font-weight: #{nth($font, 4)};
+    font-style: #{nth($font, 5)};
+  }
+}
+
+@include lato-font($lato-black, $directory-lato);
+@include lato-font($lato-black-italic, $directory-lato);
+@include lato-font($lato-bold, $directory-lato);
+@include lato-font($lato-bold-italic, $directory-lato);
+@include lato-font($lato-hairline, $directory-lato);
+@include lato-font($lato-hairline-italic, $directory-lato);
+@include lato-font($lato-heavy, $directory-lato);
+@include lato-font($lato-heavy-italic, $directory-lato);
+@include lato-font($lato-italic, $directory-lato);
+@include lato-font($lato-light, $directory-lato);
+@include lato-font($lato-light-italic, $directory-lato);
+@include lato-font($lato-medium, $directory-lato);
+@include lato-font($lato-medium-italic, $directory-lato);
+@include lato-font($lato-regular, $directory-lato);
+@include lato-font($lato-semibold, $directory-lato);
+@include lato-font($lato-semibold-italic, $directory-lato);
+@include lato-font($lato-thin, $directory-lato);
+@include lato-font($lato-thin-italic, $directory-lato);
+
+/*
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Hairline.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-HairlineItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 200;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 200;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-ThinItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Semibold.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-SemiboldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 800;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Heavy.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 800;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-HeavyItalic.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+  src: url(../fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: italic;
+  src: url(../fonts/Lato/Lato-BlackItalic.ttf);
+}
+*/

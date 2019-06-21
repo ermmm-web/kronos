@@ -1,0 +1,148 @@
+.footer {
+  background: $color__secondary;
+  padding: 0 0 67px;
+  
+  &__top {
+    
+  }
+  
+  &__bottom {
+    
+    &-row {
+      display: flex;
+    }
+    
+    &-left,
+    &-right {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    
+    &-left {
+    }
+    
+    &-right {
+      display: flex;
+    }
+    
+    &-slider {
+      flex: 0 0 75%;
+      width: 75%;
+      background: #fff;
+      
+      .lupa {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+      }
+      
+      &-info {
+        position: relative;
+      }
+      
+      &-shop {
+        letter-spacing: 0.36px;
+        margin-bottom: 5px;
+      }
+      
+      &-name {
+        font-size: 32px;
+        letter-spacing: 0.32px;
+        margin-bottom: 5px;
+      }
+      
+      &-pagination {
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        color: $color__primary;
+      }
+
+      .swiper-slide a {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        color: #fff;
+        padding: 28px 22px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.2);
+          content: "";
+        }
+      }
+      
+      .swiper-wrapper,
+      .swiper-slide,
+      .swiper-slide a {
+        height: 100%;
+      }
+    }
+    
+    &-links {
+      display: flex;
+      align-items: center;
+      flex: 0 0 25%;
+      width: 25%;
+      padding-left: 48px;
+    }
+    
+  }
+  
+  &__triggers {
+    background: #fff;
+  }
+  
+  &__contacts {
+    display: flex;
+    
+    &-left,
+    &-right {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    
+    &-right {
+      background: $color__primary;
+      color: #fff;
+      letter-spacing: 0.36px;
+      padding: 20px 28px;
+    }
+    
+    &-name {
+      font-size: 32px;
+      letter-spacing: 0.32px;
+      margin-bottom: 16px;
+    }
+    
+    &-city {
+      margin-bottom: 16px;
+    }
+    
+    &-address {
+      margin-bottom: 12px;
+    }
+    
+    &-map {
+      .dot-link-one-line {
+        display: inline-block;
+        color: #fff;
+        
+        &__name {
+          &:after {
+            background-image: repeating-linear-gradient(to right, #fff 0, #fff 1px, transparent 1px, transparent 2px);
+          }
+          &:before {
+            background-image: repeating-linear-gradient(to right, #fff 0, #fff 1px, transparent 1px, transparent 2px);
+          }
+        }
+      }
+    }
+  }
+}

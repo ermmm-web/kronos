@@ -1,0 +1,503 @@
+extends ./views/layout/ru-main
+
+block append vars
+  - var title = "Карточка товара"
+
+block body
+  .content
+    include views/inc/global/top-content
+      
+    .detail
+      .detail__top
+        .container
+          .detail__title
+            h1 Минитрактор Кентавр Т-24
+          .detail__row
+            .detail__col
+              ul.border-dot-list.detail__info1
+                li
+                  .status В наличии
+                li
+                  a.dot-link-one-line(href="#") 
+                    span.dot-link-one-line__name 1234 человек уже купили этот товар
+            .detail__col 
+              .detail__info-row
+                ul.detail__info2
+                  li.price-down
+                    img(src="img/svg/price-down.svg", alt="-25% от цены")
+                    span -25% от цены
+                  li.percent
+                    img(src="img/svg/percent.svg", alt="Распродажа")
+                    span Распродажа
+                  li.garant
+                    img(src="img/svg/garant.svg", alt="Гарантия лучшей цены")
+                    span Гарантия лучшей цены
+                .detail__info3
+                  a(href="").dot-link-one-line
+                    .dot-link-one-line__name Все товары бренда &#171;Кентавр&#187;
+          .detail__row
+            .detail__col
+              .detail__gallery
+                .detail-gallery.swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                    .swiper-slide
+                      .detail-gallery__item
+                        img.swiper-lazy(data-src="img/010.png", alt="")
+                  .swiper-button-prev-kronos
+                    svg
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-left")
+                  .swiper-button-next-kronos
+                    svg 
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-right")
+                    
+                .detail-gallery-thumbs.swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/016.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/011.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/001.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/015.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/016.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/016.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/016.png", alt="")
+                    .swiper-slide
+                      .detail-gallery-thumbs__item
+                        a
+                          img.swiper-lazy(data-src="img/016.png", alt="")
+                          
+                .detail-gallery-pagination 
+                  | Фотография 
+                  span.detail-gallery-pagination__active 2 
+                  |  из 
+                  span.detail-gallery-pagination__count 34
+                    
+                
+            .detail__col.detail__main
+              .detail__block
+                .detail__triggers
+                  .detail-triggers.detail-triggers_scroll.js-custom-scroll-y
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Предпродажная подготовка")
+                      .detail-triggers__item-name Предпродажная подготовка
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger3.png", alt="Послегарантийное обслуживание")
+                      .detail-triggers__item-name Послегарантийное обслуживание
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Скидки до 100$ на повторные покупки")
+                      .detail-triggers__item-name Скидки до 100$ на повторные покупки
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Бесплатная доставка до порога")
+                      .detail-triggers__item-name Бесплатная доставка до порога
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Предпродажная подготовка")
+                      .detail-triggers__item-name Предпродажная подготовка
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger3.png", alt="Послегарантийное обслуживание")
+                      .detail-triggers__item-name Послегарантийное обслуживание
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Скидки до 100$ на повторные покупки")
+                      .detail-triggers__item-name Скидки до 100$ на повторные покупки
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Бесплатная доставка до порога")
+                      .detail-triggers__item-name Бесплатная доставка до порога
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Предпродажная подготовка")
+                      .detail-triggers__item-name Предпродажная подготовка
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Цены от завода производители")
+                      .detail-triggers__item-name Цены от завода производители
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger3.png", alt="Послегарантийное обслуживание")
+                      .detail-triggers__item-name Послегарантийное обслуживание
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger2.png", alt="Скидки до 100$ на повторные покупки")
+                      .detail-triggers__item-name Скидки до 100$ на повторные покупки
+                    .detail-triggers__item
+                      .detail-triggers__item-img
+                        img(src="img/trigger1.png", alt="Бесплатная доставка до порога")
+                      .detail-triggers__item-name Бесплатная доставка до порога
+                        
+                .detail__action
+                  .detail-action
+                    .detail-action__text 
+                      | До окончания акции
+                      br
+                      | &#171;+3 подарка&#187; осталось
+                    .detail-action__date
+                      ul
+                        li
+                          span 08
+                          span Д
+                        li.detail-action__dot
+                        li
+                          span 12
+                          span Ч
+                        li.detail-action__dot
+                        li
+                          span 46
+                          span М
+                        li.detail-action__dot
+                        li
+                          span 37
+                          span С
+                          
+                .detail__buttons
+                  a.btn.btn_green.btn_size21(href="#", title="") Рассчитать цену
+                  a.btn.btn_size21(href="#", title="") Рассрочка/кредит
+                  
+                .detail__links
+                  ul.border-dot-list
+                    li
+                      a.dot-link-one-line(href="#")
+                        span.dot-link-one-line__name Сообщить о снижении цены
+                    li
+                      a.dot-link-one-line(href="#")
+                        span.dot-link-one-line__name Нашли дешевле?
+                .detail__views Следят 20 человек
+                  
+              .detail__sert
+                .detail-sert.swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt="")
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt="")
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt= "")
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt="")
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt="")
+                    .swiper-slide
+                      .detail-sert__item
+                        a(href="#", title="")
+                          svg.lupa
+                            use(xlink:href="img/sprite-custom.svg#svg-icon-lupa")
+                          span.detail-sert__text Увеличить
+                          img(src="img/sert1.png", alt="")
+                  .swiper-button-prev-kronos
+                    svg
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-down")
+                  .swiper-button-next-kronos
+                    svg
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-up")
+                      
+              .detail__banner 
+                .detail-banner.swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .detail-banner__item.empty 
+                        span Баннер
+                    .swiper-slide
+                      .detail-banner__item.empty 
+                        span Баннер
+                    .swiper-slide
+                      .detail-banner__item.empty 
+                        span Баннер
+                  .swiper-button-prev-kronos
+                    svg
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-left")
+                  .swiper-button-next-kronos 
+                    svg
+                      use(xlink:href="img/sprite-custom.svg#svg-icon-right")
+                
+              
+      .detail__bottom
+        .container
+          .detail__row.detail__row-opt
+            .detail__tabs
+              .tabs
+                a.js-tab(href="#description", title="") Описание
+                a.active.js-tab(href="#ch", title="") Характеристики
+                a.js-tab(href="#comp", title="") Комплектация
+                a.js-tab(href="#review", title="")
+                  | Отзывы
+                  span 12
+                a.js-tab(href="#naves", title="")
+                  | Навесное оборудование
+                  span 12
+                a.js-tab(href="#video", title="")
+                  | Видео
+                  span 356
+            .detail__opt
+              a.dot-link-one-line(href="#", title="")
+                img(src="img/svg/opt.svg", alt="")
+                span.dot-link-one-line__name Купить оптом
+                
+          .detail__tabs-container
+            .tabs-container
+              .tab-container.js-tab-container#description
+              .tab-container.active.js-tab-container#ch
+                .detail-bg(style="background-image: url(img/image.png)")
+                .detail-content
+                  .detail-ch
+                    .detail-ch__item
+                      .detail-ch__name Общие
+                      .detail-ch__props
+                        .props
+                          .props__table
+                            .props__tr
+                              .props__td Разработано:
+                              .props__td
+                                img(src="img/Belarus2.png", alt="Беларусь")
+                                | Беларусь
+                            .props__tr
+                              .props__td Вес:
+                              .props__td 650 кг
+                            .props__tr
+                              .props__td Габариты:
+                              .props__td 2300x90x1350 мм
+                            .props__tr
+                              .props__td Гарантия:
+                              .props__td 2 года
+                    .detail-ch__item
+                      .detail-ch__name Двигатель
+                      .detail-ch__props
+                        .props
+                          .props__table
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Вес:
+                              .props__td 650 кг
+                            .props__tr
+                              .props__td Габариты:
+                              .props__td 2300x90x1350 мм
+                            .props__tr
+                              .props__td Гарантия:
+                              .props__td 2 года
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                    .detail-ch__item
+                      .detail-ch__name Трарнсмиссия
+                      .detail-ch__props
+                        .props
+                          .props__table
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                    .detail-ch__item
+                      .detail-ch__name Ходовая часть
+                      .detail-ch__props
+                        .props
+                          .props__table
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                            .props__tr
+                              .props__td Марка двигателя:
+                              .props__td Honda, Rato
+                            .props__tr
+                              .props__td Тип двигателя:
+                              .props__td Бензиновый
+                                
+                  .detail__form
+                    .detail-form
+                      .detail-form__name Хотите лично пообщаться с кем-то из наших клиентов?
+                      .detail-form__row.detail-form__row-top
+                        .detail-form__col
+                          .detail-form__text
+                            | Оставьте номер своего телефона, мы предоставим 
+                            br
+                            | Вам контакты клиентов, купивших интересующую 
+                            br
+                            | Вас технику, что бы Вы могли лично узнать обо всех 
+                            br
+                            | её плюсах и минусах и определиться с выбором.
+                        .detail-form__col
+                          form
+                            include views/inc/global/input-phone
+                            button.btn.btn_white(type="submit") Отправить
+                            
+                      .detail-form__row.detail-form__row-middle 
+                        .detail-form__col
+                          .detail-form__text2
+                            | Мы ежемесячно подсчитываем количество
+                            br
+                            | и индекс удовлетворенности наших клиентов.
+                        .detail-form__col
+                          .detail-form__count
+                            span 1345
+                            span.detail-form__text2 человек стали нашими покупателями в прошлом месяце
+                            
+                      .detail-form__row.detail-form__row-bottom
+                        .satisfaction-index
+                          .satisfaction-index__item
+                            .satisfaction-index__item-img
+                              img(src="img/1.png", alt="")
+                            .satisfaction-index__item-info
+                              .satisfaction-index__item-percent 78%
+                              .satisfaction-index__item-text очень довольны
+                          .satisfaction-index__item
+                            .satisfaction-index__item-img
+                              img(src="img/2.png", alt="")
+                            .satisfaction-index__item-info
+                              .satisfaction-index__item-percent 19%
+                              .satisfaction-index__item-text довольны
+                          .satisfaction-index__item
+                            .satisfaction-index__item-img
+                              img(src="img/3.png", alt="")
+                            .satisfaction-index__item-info
+                              .satisfaction-index__item-percent 3%
+                              .satisfaction-index__item-text недовольны
+
+
+              .tab-container.js-tab-container#comp
+              .tab-container.js-tab-container#review
+              .tab-container.js-tab-container#naves
+              .tab-container.js-tab-container#video
+          

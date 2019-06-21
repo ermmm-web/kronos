@@ -1,0 +1,23 @@
+.mCustomScrollBox {
+  
+  &.mCS-kronos {
+    
+    .mCSB_scrollTools {
+      width: 8px;
+      opacity: 1;
+
+      .mCSB_dragger {
+        .mCSB_dragger_bar {
+          background: $color__additional;
+          width: 8px;
+        }
+      }
+      
+      .mCSB_draggerRail {
+        background: $color__secondary;
+      }
+    }
+    
+  }
+  
+} 

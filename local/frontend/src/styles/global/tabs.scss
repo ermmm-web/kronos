@@ -1,0 +1,43 @@
+.tabs {
+  display: flex;
+      
+  a {
+    flex-grow: 1;
+    display: block;
+    background: $color__secondary;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    transition: 0.2s;
+    padding: 14px 20px;
+    text-align: center;
+    
+    span {
+      position: relative;
+      top: -12px;
+      padding-left: 3px;
+      transition: 0.2s;
+      font-size: 12px;
+      color: $color__additional;
+    }
+    
+    &.active,
+    &:hover {
+      background: $color__primary;
+      color: #fff;
+      
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.tabs-container {}
+.tab-container {
+  display: none;
+  
+  &.active {
+    display: block;
+  }
+}

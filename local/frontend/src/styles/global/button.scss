@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: $color__primary;
+  color: #fff;
+  border-radius: 3.388px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  
+  &:focus,
+  &:hover {
+    color: #fff;
+  }
+  
+  &_size21 {
+    font-size: 21px;
+    letter-spacing: 0.36px;
+  }
+  
+  &_green {
+    background: $color__text3;
+  }
+  
+  &_white {
+    background: #fff;
+    color: #000;
+    border: 1px solid $color__additional;
+    border-radius: 4.13855px;
+
+    &:focus,
+    &:hover {
+      color: #000;
+    }
+  }
+}

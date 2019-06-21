@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixin";
+@import "extends";
+
+/* sprite */
+@import "sprite/sprite-svg-css";
+@import "sprite/sprite-image-icons";
+
+/* vendors */
+@import "libs/normalize";
+@import "libs/swiper";
+@import "libs/jquery.mCustomScrollbar";
+@import "libs/font-awesome/fontawesome";
+@import "libs/font-awesome/regular";
+@import "libs/font-awesome/brands";
+@import "libs/font-awesome/solid";
+
+/* global */
+@import "global/fonts";
+@import "global/global";
+@import "global/button";
+@import "global/form";
+@import "global/swiper";
+@import "global/tabs";
+@import "global/triggers";
+@import "global/mCustomScrollbar";
+@import "global/header/index";
+@import "global/structure/index";
+@import "global/footer/index";
+
+/* catalog-detail */
+@import "page/catalog-detail/index";

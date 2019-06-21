@@ -1,0 +1,158 @@
+header.header
+  .header__top
+    .container
+      .header-info
+        div
+          .logo
+            a(href="#", title="Главная")
+              img(src="img/logo.svg", alt="Главная")
+              span.logo__text Сельхозтехника оптом и в розницу
+          .menu
+            ul
+              li.menu-drop-item
+                a(href="#") Каталог
+                .menu__drop.menu__drop-catalog
+                  .menu__drop-bg
+                    
+                  ul
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu1.svg", alt="") 
+                        | Минитракторы от 135 000 рублей
+                    li
+                      a(href="#", data-image="img/faq.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu2.svg", alt="")
+                        | Мотоблоки от 18 900 рублей
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu3.svg", alt="")
+                        | Культиваторы от 7 200 рублей
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu4.svg", alt="")
+                        | Навесное оборудование для минитракторов
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu5.svg", alt="")
+                        | Навесное оборудование для мотоблоков
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu6.svg", alt="")
+                        | Двигатели
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu7.svg", alt="")
+                        | Запчасти
+              li
+                a(href="#") Оптовикам
+              li
+                a(href="#") Сервис
+              li
+                a(href="#") Доставка
+              li
+                a(href="#") Рассрочка
+              li.menu-drop-item
+                a(href="#") О нас
+                .menu__drop.menu__drop-about
+                  .menu__drop-bg
+
+                  ul
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu8.svg", alt="")
+                        | Часто задаваемые вопросы 
+                    li
+                      a(href="#", data-image="img/faq.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu9.svg", alt="")
+                        | Почему покупают у нас
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu10.svg", alt="")
+                        | История 
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu11.svg", alt="")
+                        | Наши награды
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu12.svg", alt="")
+                        | Новости
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu13.svg", alt="")
+                        | Отзывы
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu14.svg", alt="")
+                        | Социальная помощь
+                    li
+                      a(href="#", data-image="img/minitraktor.png")
+                        .menu__drop-icon
+                          img(src="img/svg/menu15.svg", alt="")
+                        | Вакансии
+              li
+                a(href="#") Контакты
+                
+          include global/lang
+              
+            
+        div
+          .header__item
+            ul
+              li
+                a(href="#", title="Отзывы").dot-link-one-line
+                  svg(width="22", height="22")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-review")
+                  span.dot-link-one-line__name Отзывы
+                  span.dot-link-one-line__count 2355
+              li
+                a(href="#", title="Поиск").dot-link-one-line
+                  svg(width="22", height="22")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-search")
+                  span.dot-link-one-line__name Поиск
+                
+          .header__item
+            ul
+              li
+                a(href="#", title="Видео").dot-link-one-line
+                  svg(width="23", height="23")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-video")
+                  span.dot-link-one-line__name Видео
+                  span.dot-link-one-line__count 2355
+              li
+                a(href="#", title="Наш магазин").dot-link-one-line
+                  svg(width="22", height="22")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-shop")
+                  span.dot-link-one-line__name Наш магазин
+                  
+          .header__item
+            ul
+              li.header__item-phone
+                a(href="#", title="Видео").phone-link
+                  svg(width="22", height="22")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-phone")
+                  span.phone-link__name +7 800 555-98-62
+              li
+                a(href="#", title="Наш магазин").dot-link-one-line
+                  svg(width="22", height="22")
+                    use(xlink:href="img/sprite-custom.svg#svg-icon-phone")
+                  span.dot-link-one-line__name Бесплатный звонок
+          
+
+  .header__bottom
+    .banner
+

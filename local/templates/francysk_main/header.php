@@ -1,0 +1,1 @@
+<?require_once $_SERVER["DOCUMENT_ROOT"] . "/local/include/templates/header_main.php"; ?>

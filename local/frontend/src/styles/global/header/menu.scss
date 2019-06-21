@@ -1,0 +1,138 @@
+.menu {
+  margin: 2px 0 0 34px;
+  
+  > ul {
+    @extend %list;
+    display: flex;
+    
+    > li {
+      
+      > a {
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 0.36px;
+        padding: 14px 10px;
+        display: block;
+      }
+      
+      &.menu-drop-item {
+        position: relative;
+        
+        > a {
+          position: relative;
+          padding-right: 24px;
+          z-index: 6;
+          
+          &:before {
+            position: absolute;
+            background: #fff;
+            bottom: -8px;
+            width: 100%;
+            left: 0;
+            height: 8px;
+          }
+          
+          &:after {
+            @extend %dropdown-arrow;
+            position: absolute;
+            right: 6px;
+            margin-top: -4px;
+            top: 50%;
+            transition: 0.2s;
+            content: "";
+          }
+        }
+      }
+      
+      &.active,
+      &:hover {
+        > a {
+          background: #fff;
+          box-shadow: 0 0 12px rgba(255, 102, 0, 0.2);
+          
+          &:after {
+            transform: rotateZ(180deg);
+          }
+        }
+        
+        &.menu-drop-item {
+          > a {
+            &:before {
+              content: "";
+            }
+          }
+        }
+
+        .menu__drop {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  &__drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 867px;
+    padding: 20px;
+    background: #fff;
+    display: none;
+    box-shadow: 0 0 12px rgba(255, 102, 0, 0.2);
+    z-index: 5;
+    
+    &-about {
+      left: auto;
+      right: -246px;
+    }
+    
+    &-catalog {}
+    
+    &-bg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+    
+    &-icon {
+      width: 40px;
+      margin-right: 12px;
+      img {
+        display: block;
+      }
+      //position: absolute;
+      //left: 0;
+      //top: 50%;
+      //transform: translateY(-50%);
+    }
+    
+    > ul {
+      @extend %list;
+      
+      > li {
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        > a {
+          display: inline-flex;
+          align-items: center;
+          
+          position: relative;
+          transition: 0.2s;
+          
+          &:hover {
+            color: $color__primary
+          }
+        }
+      }
+    }
+  }
+}

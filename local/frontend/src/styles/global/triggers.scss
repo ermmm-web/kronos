@@ -1,0 +1,46 @@
+.triggers {
+  
+}
+
+.trigger-item {
+  background: #fff;
+  border-left: 1px solid $color__text2;
+  
+  &__normal {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  &__icon {
+    position: absolute;
+    top: -104px;
+    left: -88px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: $color__primary;
+  }
+  
+  &__text,
+  &__info-text {
+    font-size: 20px;
+    letter-spacing: 0.36px;
+  }
+  
+  &__text {
+    + .trigger-item__info-text {
+      padding-top: 8px;
+    }
+  }
+  &__info-text {
+    color: $color__additional;
+  }
+  
+  &__content {
+    padding: 10px 16px;
+  }
+  
+}

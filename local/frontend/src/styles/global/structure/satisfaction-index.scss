@@ -1,0 +1,38 @@
+.satisfaction-index {
+  @include clearfix();
+  
+  &__item {
+    float: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 96px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &-img {
+      float: left;
+      width: 98px;
+      img {
+        display: block;
+      }
+    }
+    
+    &-info {
+      padding-left: 32px;
+    }
+    
+    &-percent {
+      line-height: 1;
+      font-size: 36px;
+      letter-spacing: 0.32px;
+    }
+    
+    &-text {
+      font-size: 20px;
+      letter-spacing: 0.36px;
+    }
+  }
+}

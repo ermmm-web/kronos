@@ -1,0 +1,8 @@
+/*.content-head__video-content .video__content-top{display:none;}
+.content-head__video-content .video__content-bottom{display:none;}
+.content-head__video-content .video__bg:before{display:none;}
+.content-head__video-content .video__play:before{opacity:0.9;}
+
+.content-head__video-content .swiper-slide a.video{height:252px; width:448px !important;}
+.content-head__video-content .video__content{height:252px; width:448px;}
+.content-head__video-content .swiper-slide{width:auto;}*/

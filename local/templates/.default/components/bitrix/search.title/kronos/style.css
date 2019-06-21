@@ -1,0 +1,10 @@
+.title-search-result{z-index:11001;}
+.search_desktop_ajax {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background: #fff;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 12px rgba(255, 102, 0, .2);
+    box-shadow: 0 0 12px rgba(255, 102, 0, .2)
+}

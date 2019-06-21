@@ -1,0 +1,51 @@
+.breadcrumbs {
+  
+  &__list {
+    @extend %list;
+    font-size: 0;
+    
+    li {
+      position: relative;
+      font-size: 18px;
+      display: inline-block;
+      padding-right: 42px;
+      
+      &:after {
+        @include sprite($arrow);
+        position: absolute;
+        top: 6px;
+        right: 14px;
+        content: "";
+      }
+      
+      &:last-child {
+        padding-right: 0;
+        &:after {
+          content: none;
+        }
+      }
+      
+      a {
+        position: relative;
+        letter-spacing: 0.36px;
+        
+        &:after {
+          @extend .dot-link-one-line__name:after;
+        }
+        
+        &:before {
+          @extend .dot-link-one-line__name:before;
+        }
+        
+        &:hover {
+          &:after {
+            opacity: 0;
+          }
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

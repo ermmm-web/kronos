@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.popup {
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup__name {
+    font-size: 22px;
+    letter-spacing: 0.36px;
+    text-align: center;
+}
+
+@media (max-width: 1439.98px) {
+    .popup__name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 959.98px) {
+    .popup__name {
+        font-size: 20px;
+    }
+}
+
+.popup__row {
+    margin: 0 -17px 33px;
+}
+
+.popup__row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@media (max-width: 959.98px) {
+    .popup__row {
+        margin: 0;
+    }
+}
+
+.popup__row_btn {
+    text-align: center;
+}
+
+.popup__row_btn .popup__col {
+    margin-bottom: 0;
+}
+
+.popup__row:last-child {
+    margin-bottom: 0;
+}
+
+.popup__col {
+    float: left;
+    min-height: 1px;
+    padding: 0 17px;
+    width: 100%;
+}
+
+@media (max-width: 959.98px) {
+    .popup__col {
+        float: none;
+        padding: 0;
+        width: auto;
+        margin-bottom: 32px;
+    }
+}
+
+.popup__col_50 {
+    width: 50%;
+}
+
+@media (max-width: 959.98px) {
+    .popup__col_50 {
+        width: auto;
+    }
+}
+
+/* попап (пригласить в тендер) */
+.popup-invite-tender {
+    width: 950px;
+    margin: 0 auto;
+    padding: 36px 138px;
+}
+
+@media (max-width: 1439.98px) {
+    .popup-invite-tender {
+        width: 920px;
+        padding: 36px 122px;
+    }
+}
+
+@media (max-width: 959.98px) {
+    .popup-invite-tender {
+        width: auto;
+        padding: 44px 16px;
+    }
+}
+
+.popup-invite-tender .popup__name {
+    margin-bottom: 46px;
+}
+
+@media (max-width: 1439.98px) {
+    .popup-invite-tender .popup__name {
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 959.98px) {
+    .popup-invite-tender .popup__name {
+        margin-bottom: 26px;
+    }
+}
+
+.popup-invite-tender .input-phone_tender {
+    min-width: 0;
+}
+
+/* попап (пригласить в тендер) */

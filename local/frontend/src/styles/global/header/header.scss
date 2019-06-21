@@ -1,0 +1,65 @@
+.header {
+  background: $color__secondary;
+  
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  &__item {
+    margin: 14px 28px 0 0;
+    
+    &-phone {
+      margin-top: -4px;
+    }
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    ul {
+      @extend %list;
+      
+      li {
+        margin-bottom: 10px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        a {
+          position: relative;
+          padding-left: 32px;
+          
+          svg {
+            position: absolute;
+            left: 0;
+            stroke: $color__additional;
+            transition: 0.2s;
+          }
+          
+          &:hover {
+            svg {
+              stroke: $color__primary;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+.header-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px 0 0;
+  
+  > div {
+    display: flex;
+    align-items: flex-start;
+  }
+}
