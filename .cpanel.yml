@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export REPOPATH=/home/public_html/local/*
+    - export REPOPATH=https://github.com/alex-ermmm/kronos.git*
     - export SITEPATH=/home/public_html/local/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
