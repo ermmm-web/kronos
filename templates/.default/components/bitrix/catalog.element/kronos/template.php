@@ -174,6 +174,11 @@ echo '</pre>';	*/
 <style type="text/css">
     .detail__top-kidys {display: none}
     .detail__top {display: block}
+
+    .tooltipster-sidetip.tooltipster-kronos .tooltipster-content {
+        font-size: 14px;
+    }
+
     @media all and (min-width: 960px) {
         .detail__top {display: none}
         .detail__top-kidys {display: block}
@@ -219,8 +224,8 @@ echo '</pre>';	*/
         .sert-kidys .detail__sert {width: 72px;margin-left: 34px}
         .sert-kidys .detail__sert .swiper-slide, .sert-kidys .detail__sert .swiper-slide img {height: 104px!important}
 
-        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos {width: 22px;height: 24px;display: flex;justify-content: center;align-items: center;text-align: center} 
-        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos {right: 22px }
+        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos {width: 20px;height: 20px;display: flex;justify-content: center;align-items: center;text-align: center} 
+        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos {right: 20px }
         .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos svg, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos svg {position: static;margin: 0;width: 5px;height: 8px}
 
         .description-kidys .detail__triggers {margin: 0}
