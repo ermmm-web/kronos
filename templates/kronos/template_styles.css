@@ -37543,3 +37543,35 @@ li.section.menu-drop-item:nth-child(6) {
 .content-head__video-content {
     position: relative
 }
+
+/* Пригласить в тендер */
+@media (min-width: 1699.98px) {
+    .input__label {
+        font-size: 11px;
+        letter-spacing: .4px;        
+    }
+}
+
+@media (max-width: 360px) {
+    .hide_mobile {
+        display: none;
+    }   
+    .input__label {
+        font-size: 16px;
+        letter-spacing: .4px;        
+    }
+    .input-phone > label {
+        font-size: 16px;
+        line-height: 13px;
+    }    
+    .popup.popup-invite-tender .popup__row_btn .btn {
+        padding: 10px 25px 9px;
+        letter-spacing: .36px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 361px) {
+    .show_mobile {
+        display: none;
+    }   
+}
