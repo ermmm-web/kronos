@@ -240,7 +240,11 @@ echo '</pre>';	*/
         .detail-action .detail-action__date ul .js-countUpDeadline {font-size: 21px!important;line-height: 25px!important;letter-spacing: .4px!important}
         .detail__block-bottom .detail-action .detail-action__dot {margin-top: 11px!important}
         .detail-action__date ul li span + span {font-size: 10px!important;line-height: 12px!important}
-        .detail__price {margin: 19px 0 15px 0}
+        .detail__price {margin: 45px 0 20px 0}
+        .banner-product-open__price .price {color: #FF6600}
+        .banner-product-open__price .price.price_normal {font-family: Lato;font-style: normal;font-weight: normal;font-size: 21px!important;line-height: 25px!important;display: flex;align-items: center;letter-spacing: 0.36px!important;color: #000000}        
+        .banner-product-open__price .price.price_old {font-family: Lato;font-style: normal;font-weight: normal;font-size: 14px!important;line-height: 17px!important;display: flex;align-items: center;letter-spacing: 0.4px!important;text-decoration-line: line-through;color: #999999}
+        .banner-product-open__price.banner-product-open__price_old {display: flex;align-items: flex-end}.banner-product-open__price.banner-product-open__price_old > * {margin-bottom: 0;margin-top: 0}
         .detail__price .product-item-detail-price-current {font-size: 21px!important;line-height: 25px!important;letter-spacing: .36px!important}
         .detail__buttons {margin-top: 7px;display: flex;align-items: center;justify-content: space-between}
         .detail__buttons a:not(:last-of-type) {margin-right: 12px}
