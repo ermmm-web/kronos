@@ -170,7 +170,7 @@ echo '</pre>';	*/
 
 ?>
 
-<!-- kidys css block start / 18.06-21.06 -->
+<!-- kidys css block start / 18.06-25.06 -->
 <style type="text/css">
     .detail__top-kidys {display: none}
     .detail__top {display: block}
@@ -250,11 +250,11 @@ echo '</pre>';	*/
 <script type="text/javascript">
     $(function() {$('.detail__buttons a[title="Рассрочка/кредит"]').toggleClass('btn btn_min');$('.detail-sert .swiper-wrapper .swiper-slide').css('height', '104px', true)})
 </script>
-<!-- kidys css block end / 18.06-21.06 -->
+<!-- kidys css block end / 18.06-25.06 -->
 
 <div class="detail">
 
-	<!-- kidys html block start / 18.06-21.06 -->
+	<!-- kidys html block start / 18.06-25.06 -->
   <div class="detail__top-kidys">
         <div class="detail__title-kidys">
             <h1><?=$arResult['NAME']?></h1>
@@ -545,7 +545,7 @@ echo '</pre>';	*/
             </div>
         </div>
     </div>
-	<!-- kidys html block end / 18.06-21.06 -->
+	<!-- kidys html block end / 18.06-25.06 -->
 
     <div class="detail__bottom">
         <div class="container-fluid">
