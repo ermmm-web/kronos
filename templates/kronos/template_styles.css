@@ -37547,6 +37547,29 @@ li.section.menu-drop-item:nth-child(6) {
 }
 
 /* Пригласить в тендер */
+
+
+.popup.popup-invite-tender .lang__list-row {
+        font-size: 12px;
+        letter-spacing: .36px;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 14px;
+}
+.popup.popup-invite-tender .lang__list-cell:first-child {
+    padding: 12px 7px 12px 10px;     
+}
+.popup.popup-invite-tender .input-phone__lang .lang__list-cell:last-child {
+    padding-right: 28px;
+}
+.popup.popup-invite-tender  .input-phone__placeholder-inner {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    bottom: 3px;
+    left: 4px;
+}
 .popup.popup-invite-tender, 
 .popup.popup-invite-tender button {
     font-family: Lato;
@@ -37581,6 +37604,9 @@ li.section.menu-drop-item:nth-child(6) {
     .hide_mobile {
         display: none;
     }   
+    .popup.popup-invite-tender .input-phone__lang .lang__list-cell:last-child {
+        padding-right: 31px;
+    }
     .popup.popup-invite-tender .input__label {
         font-size: 16px;
         letter-spacing: .4px;        
@@ -37588,7 +37614,7 @@ li.section.menu-drop-item:nth-child(6) {
     .popup.popup-invite-tender .input-phone > label {
         font-size: 16px;
         line-height: 19px;
-        font-weight: normal;
+        font-weight: 700;
     }    
     .popup.popup-invite-tender .popup__row_btn .btn {
         padding: 10px 25px 10px;
@@ -37604,6 +37630,23 @@ li.section.menu-drop-item:nth-child(6) {
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.48px;
+    }
+    .popup.popup-invite-tender .input-phone__lang {
+        width: 70px;
+        padding: 2px 0 0;
+    }
+    .popup.popup-invite-tender .input-phone__placeholder-inner {
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+        bottom: 4px;
+        left: 5px;
+    }
+    .popup.popup-invite-tender .lang__list {
+        right: -16px;
+        top: -16px;
+        transform: translateY(0);
     }
 }
 @media (min-width: 361px) {
