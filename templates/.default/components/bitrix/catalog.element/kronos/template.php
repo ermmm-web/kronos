@@ -170,10 +170,15 @@ echo '</pre>';	*/
 
 ?>
 
-<!-- kidys css block start / 18.06-21.06 -->
+<!-- kidys css block start / 18.06-25.06 -->
 <style type="text/css">
     .detail__top-kidys {display: none}
     .detail__top {display: block}
+
+    .tooltipster-sidetip.tooltipster-kronos .tooltipster-content {
+        font-size: 14px;
+    }
+
     @media all and (min-width: 960px) {
         .detail__top {display: none}
         .detail__top-kidys {display: block}
@@ -219,8 +224,8 @@ echo '</pre>';	*/
         .sert-kidys .detail__sert {width: 72px;margin-left: 34px}
         .sert-kidys .detail__sert .swiper-slide, .sert-kidys .detail__sert .swiper-slide img {height: 104px!important}
 
-        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos {width: 22px;height: 24px;display: flex;justify-content: center;align-items: center;text-align: center} 
-        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos {right: 22px }
+        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos {width: 20px;height: 20px;display: flex;justify-content: center;align-items: center;text-align: center} 
+        .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos {right: 20px }
         .detail__row-kidys_info-bottom .sert-kidys .swiper-button-prev-kronos svg, .detail__row-kidys_info-bottom .sert-kidys .swiper-button-next-kronos svg {position: static;margin: 0;width: 5px;height: 8px}
 
         .description-kidys .detail__triggers {margin: 0}
@@ -235,7 +240,11 @@ echo '</pre>';	*/
         .detail-action .detail-action__date ul .js-countUpDeadline {font-size: 21px!important;line-height: 25px!important;letter-spacing: .4px!important}
         .detail__block-bottom .detail-action .detail-action__dot {margin-top: 11px!important}
         .detail-action__date ul li span + span {font-size: 10px!important;line-height: 12px!important}
-        .detail__price {margin: 19px 0 15px 0}
+        .detail__price {margin: 45px 0 20px 0}
+        .banner-product-open__price .price {color: #FF6600}
+        .banner-product-open__price .price.price_normal {font-family: Lato;font-style: normal;font-weight: normal;font-size: 21px!important;line-height: 25px!important;display: flex;align-items: center;letter-spacing: 0.36px!important;color: #000000}        
+        .banner-product-open__price .price.price_old {font-family: Lato;font-style: normal;font-weight: normal;font-size: 14px!important;line-height: 17px!important;display: flex;align-items: center;letter-spacing: 0.4px!important;text-decoration-line: line-through;color: #999999}
+        .banner-product-open__price.banner-product-open__price_old {display: flex;align-items: flex-end}.banner-product-open__price.banner-product-open__price_old > * {margin-bottom: 0;margin-top: 0}
         .detail__price .product-item-detail-price-current {font-size: 21px!important;line-height: 25px!important;letter-spacing: .36px!important}
         .detail__buttons {margin-top: 7px;display: flex;align-items: center;justify-content: space-between}
         .detail__buttons a:not(:last-of-type) {margin-right: 12px}
@@ -250,11 +259,11 @@ echo '</pre>';	*/
 <script type="text/javascript">
     $(function() {$('.detail__buttons a[title="Рассрочка/кредит"]').toggleClass('btn btn_min');$('.detail-sert .swiper-wrapper .swiper-slide').css('height', '104px', true)})
 </script>
-<!-- kidys css block end / 18.06-21.06 -->
+<!-- kidys css block end / 18.06-25.06 -->
 
 <div class="detail">
 
-	<!-- kidys html block start / 18.06-21.06 -->
+	<!-- kidys html block start / 18.06-25.06 -->
   <div class="detail__top-kidys">
         <div class="detail__title-kidys">
             <h1><?=$arResult['NAME']?></h1>
@@ -545,7 +554,7 @@ echo '</pre>';	*/
             </div>
         </div>
     </div>
-	<!-- kidys html block end / 18.06-21.06 -->
+	<!-- kidys html block end / 18.06-25.06 -->
 
     <div class="detail__bottom">
         <div class="container-fluid">
