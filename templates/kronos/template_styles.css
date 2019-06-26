@@ -37593,6 +37593,14 @@ li.section.menu-drop-item:nth-child(6) {
     letter-spacing: 0.4px;
     line-height: 19px;
 }
+.popup.popup-invite-tender .input-phone__placeholder-inner {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
 @media (min-width: 1699.98px) {
     .popup.popup-invite-tender .input__label {
         font-size: 11px;
