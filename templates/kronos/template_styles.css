@@ -37606,6 +37606,11 @@ li.section.menu-drop-item:nth-child(6) {
         bottom: 4px;
         left: 5px;
     }
+    .popup.popup-invite-tender .lang__list {
+        right: -13px;
+        top: -17px;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 360px) {
