@@ -37597,6 +37597,16 @@ li.section.menu-drop-item:nth-child(6) {
         letter-spacing: .4px;        
     }
 }
+@media (max-width: 960px) {
+    .popup.popup-invite-tender .input-phone__placeholder-inner {
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+        bottom: 4px;
+        left: 5px;
+    }
+}
 
 @media (max-width: 360px) {
     .hide_mobile {
@@ -37626,7 +37636,7 @@ li.section.menu-drop-item:nth-child(6) {
     }
     .popup.popup-invite-tender .input__label {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 14px;
         letter-spacing: 0.48px;
     }
     .popup.popup-invite-tender .input-phone__lang {
