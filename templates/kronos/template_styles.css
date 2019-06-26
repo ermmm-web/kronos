@@ -33812,15 +33812,15 @@ body.popup-content-open {
 }
 
 .popup.popup-invite-tender {
-    width: 950px;
+    width: 720px;
     margin: 0 auto;
-    padding: 36px 138px
+    padding: 28px 44px
 }
 
 @media (max-width: 1439.98px) {
     .popup.popup-invite-tender {
-        width: 920px;
-        padding: 36px 122px
+        width: 720px;
+        padding: 28px 44px
     }
 }
 
@@ -33856,8 +33856,10 @@ body.popup-content-open {
 }
 
 .popup.popup-invite-tender .popup__row_btn .btn {
-    padding: 6px 17px 9px;
-    letter-spacing: .36px
+    padding: 6px 24px 9px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.4px;
 }
 
 .popup.popup-shop {
@@ -37545,8 +37547,31 @@ li.section.menu-drop-item:nth-child(6) {
 }
 
 /* Пригласить в тендер */
+.popup.popup-invite-tender, 
+.popup.popup-invite-tender button {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+.popup.popup-invite-tender .input__label {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.48px;
+    border: 4px solid #FFFFFF;
+}
+.popup.popup-invite-tender label {     
+    margin-bottom: 0;         
+}
+.popup.popup-invite-tender .input__input > input {
+    height: 36px;
+}
+.popup.popup-invite-tender .popup__name {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 19px;
+}
 @media (min-width: 1699.98px) {
-    .input__label {
+    .popup.popup-invite-tender .input__label {
         font-size: 11px;
         letter-spacing: .4px;        
     }
@@ -37556,18 +37581,29 @@ li.section.menu-drop-item:nth-child(6) {
     .hide_mobile {
         display: none;
     }   
-    .input__label {
+    .popup.popup-invite-tender .input__label {
         font-size: 16px;
         letter-spacing: .4px;        
     }
-    .input-phone > label {
+    .popup.popup-invite-tender .input-phone > label {
         font-size: 16px;
-        line-height: 13px;
+        line-height: 19px;
+        font-weight: normal;
     }    
     .popup.popup-invite-tender .popup__row_btn .btn {
-        padding: 10px 25px 9px;
+        padding: 10px 25px 10px;
         letter-spacing: .36px;
         font-size: 18px;
+    }
+    .popup.popup-invite-tender .popup__name {
+        font-size: 20px;
+        letter-spacing: 0.4px;
+        line-height: 24px;
+    }
+    .popup.popup-invite-tender .input__label {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.48px;
     }
 }
 @media (min-width: 361px) {
