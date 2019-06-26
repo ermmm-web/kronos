@@ -37597,7 +37597,7 @@ li.section.menu-drop-item:nth-child(6) {
         letter-spacing: .4px;        
     }
 }
-@media (max-width: 960px) {
+@media (max-width: 959px) {
     .popup.popup-invite-tender .input-phone__placeholder-inner {
         width: 100%;
         text-align: left;
@@ -37642,15 +37642,7 @@ li.section.menu-drop-item:nth-child(6) {
     .popup.popup-invite-tender .input-phone__lang {
         width: 70px;
         padding: 2px 0 0;
-    }
-    .popup.popup-invite-tender .input-phone__placeholder-inner {
-        width: 100%;
-        text-align: left;
-        overflow: hidden;
-        position: relative;
-        bottom: 4px;
-        left: 5px;
-    }
+    }    
     .popup.popup-invite-tender .lang__list {
         right: -16px;
         top: -16px;
