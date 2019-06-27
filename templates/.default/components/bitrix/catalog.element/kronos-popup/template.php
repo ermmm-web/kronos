@@ -493,7 +493,7 @@ function show_facts () {
 
 ?>
 
-<div class="popup buy-with-presents">
+<div class="popup buy-with-presents_forms">
 	<div class="popup__body ">
 		<form id="save_order_form">
 			<input type="hidden" name="ELEMENT_ID" value="<?=$arResult['ID']?>" >
