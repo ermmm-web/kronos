@@ -18,6 +18,9 @@
         width: auto
     }
 }
+.buy-with-presents__plus_image{
+    max-height: 100px;
+} 
 .popup__body {
 	width: 750px;
 }
